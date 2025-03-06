@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* ----------------------------------------Общие стили------------------------------------------ */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 970px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+/* .section--white p {
+    color: #6A859C;
+    line-height: 1,8;
+} */
+
+.title {
+    margin-bottom: 17px;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+}
+
+.subtitle {
+    font-size: 17px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+}
+
+.title-cards {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.subtitle-cards {
+    font-size: 14px;
+}
+
+.section--white {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.section--dark {
+    background-color: #192024;
+    color: #FFF;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.title-wrapper {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+/* ------------------------------------------Шапка-------------------------------------------------*/
+.header {
+    width: 100%;
+    background-color: #FFF;
+    padding: 1px 0; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #69B9FF;
+}
+
+.header_nav a {
+    font-size: 15px;
+    color: #676770; 
+    transition: color 0,5s;
+}
+
+.header_nav a:hover {
+    color: #0082F3;
+}
+
+.header_nav a:active {
+    color: #0065BD;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav ul {
+    display: flex;
+}
+
+.header_nav li+li {
+    margin-left: 40px;
+}
+
+/* -----------------------------------------Основная часть---------------------------------------- */
+
+/* Секция welcome */
+.welcome {
+    min-height: 600px;
+    /* height: 100vh; */
+    display: flex;
+    padding: 195px 0; 
+    color: #FFF;
+    background-image: url("../images/WelcomeImage.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome li {
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.Title {
+font-size: 59px;
+text-transform: uppercase;
+letter-spacing: 4px;
+}
+
+.PrimaryLink {
+    display:inline-block;
+    padding: 11px 30px;
+    border-radius: 4px;
+    background-color: #69B9FF;
+    transition: background-color 0.3s;
+}
+
+.PrimaryLink:hover {
+    background-color: #7AC1FF;
+}
+
+.PrimaryLink:active {
+    background-color: #1994FF;
+}
+
+.link {
+    display:inline-block;
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0,3s;
+}
+
+.link:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    border-color: rgb(255, 255, 255, 0.5);
+}
+
+.link:active {
+    background-color: rgb(0, 0, 0, 0.2);
+    border-color: rgb(0, 0, 0, 0.5);
+}
+
+.buttoms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Секция About */
+.about .title-cards {
+    color:#676770
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    margin-right: 20px;
+    width: 300px;
+    border: 1px solid #dcebf7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 35px 15px 25px 15px;
+}
+
+.cards img {
+    margin-bottom: 20px;
+    width: 94px;
+    height: 94px;
+    object-fit: contain;
+}
+
+/* Секция cervices */
+.cards_services {
+    justify-content: space-between;
+}
+
+.cards_services img {
+    margin-bottom: 20px;
+}
+
+.services .link {
+    margin-top: 20px;
+}
+/* Секция Tab */
+.buttoms_two {
+    justify-content: space-between;
+    margin-right: 16px;
+    margin-bottom: 50px;
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #92A0AD;
+    border-radius: 5px;
+    padding: 0px 30px;
+    transition: background-color 0.2s;
+}
+.buttoms_two:hover {
+    background-color: #2E80B6;
+}
+
+.buttoms_two:active {
+    background-color: #3791CC;
+}
+
+.title-cards_tab {
+    font-size: 31px;
+    color: #676770;
+    margin-top: 16px;
+    margin-bottom: 14px;
+}
+
+.subtitle-cards_tab {
+    font-size: 14px;
+    color: #6A859C;
+}
+
+/* -----------------------------------------Футер---------------------------------------- */
+.footer_container {
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
+    font-weight: 300;
+    column-gap: 120px;
+    color: #6A859C;
+    padding-bottom: 50px;
+    font-size: 14px;
+}
+
+.title_footer {
+    text-transform: uppercase;
+    color: #676770;
+    font-size: 18px;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+}
+
+.usefullinks {
+    row-gap: 18px;
+}
+
+.social {
+    row-gap: 18px;
+}
+
+.section_copyright{
+    background-color: #383838;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    color: #9E9E9E;
+    font-size: 15px;
+}
